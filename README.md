@@ -194,7 +194,7 @@ Designed for neurodivergent guests, busy parents, workers, visual learners, and 
 - Semantic HTML with mobile-first CSS
 - Component-driven sections with minimal JS (only for demo interactions)
 - Token-based inline styles for consistency
-- Preload fonts, optimize SVG/PNG assets, and lazy-load lower images
+- Preload fonts, optimize SVG/PNG assets, and lazy-load images below the fold
 
 ---
 
