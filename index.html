@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>S&S Kreates Co. — Savings that spark joy</title>
+    <meta
+      name="description"
+      content="WCAG-friendly budgeting tools, scratch-off savings challenges, and joyful trackers crafted for neurodivergent planners."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;500;700&family=Playfair+Display:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <header class="site-header" role="banner">
+      <div class="logo-group" aria-label="S and S Kreates Company logo">
+        <span class="logo">S&S</span>
+        <span class="logo-subtitle">Savings that spark joy</span>
+      </div>
+      <nav aria-label="Primary">
+        <ul>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#scratch-demo">Scratch demo</a></li>
+          <li><a href="#trackers">Trackers</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#newsletter">Newsletter</a></li>
+        </ul>
+      </nav>
+      <button class="ghost-btn" aria-label="Toggle reduced motion" data-motion-toggle>
+        Reduced motion: <span data-motion-state>on</span>
+      </button>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">ADHD-friendly budgeting studio</p>
+          <h1 id="hero-title">Savings that feel gentle, joyful, and doable</h1>
+          <p>
+            Custom scratch-offs, printable trackers, and coordinated palettes help you stay motivated
+            without the overwhelm. Everything is WCAG compliant, neurodivergent-aware, and dopamine-rich.
+          </p>
+          <div class="hero-actions">
+            <a class="btn" href="#shop">Explore the shop</a>
+            <a class="btn secondary" href="#scratch-demo">Try the scratch demo</a>
+          </div>
+          <ul class="hero-highlights" aria-label="Brand highlights">
+            <li>Keyboard friendly scratch demo</li>
+            <li>Palette switch-ready design system</li>
+            <li>WooCommerce-ready categories</li>
+          </ul>
+        </div>
+        <div class="hero-visual" role="img" aria-label="Soft gradient card with coins and butterflies">
+          <div class="floating-icon">🪙</div>
+          <div class="floating-icon">🦋</div>
+          <div class="hero-card">
+            <p>Lavender + teal palette</p>
+            <p class="hero-card-value">$1,000 Journey</p>
+            <p class="hero-card-note">Tap each circle when you save</p>
+          </div>
+          <div class="hero-card small">
+            <p>Reset-friendly layouts</p>
+            <p>Notes + dopamine boosts</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="shop" aria-labelledby="shop-title" class="shop-overview">
+        <div>
+          <h2 id="shop-title">All the ways to save</h2>
+          <p>
+            Every product ships with palette dots, space for resets, and printable + tablet-ready options.
+            Mix-and-match scratch cards, trackers, and guided journals to build your full money system.
+          </p>
+        </div>
+        <ul class="pill-list" aria-label="Shop filters">
+          <li>Format · digital / physical</li>
+          <li>Palette · lavender + teal</li>
+          <li>Goal · emergency / travel / debt</li>
+          <li>Difficulty · gentle / medium / bold</li>
+        </ul>
+      </section>
+
+      <section id="categories" class="category-grid" aria-label="Primary savings tool categories">
+        <article>
+          <h3>Scratch-Off Challenges</h3>
+          <p>Digital + mailed foil cards with fixed 220px circles and dopamine sparkles.</p>
+        </article>
+        <article>
+          <h3>Savings Trackers</h3>
+          <p>Printable and tablet layouts for weekly, monthly, and big-goal planning.</p>
+        </article>
+        <article>
+          <h3>Bundles & Kits</h3>
+          <p>Palette-matched combos that pair trackers, journals, and scratch-offs.</p>
+        </article>
+        <article>
+          <h3>Mindful Money Care</h3>
+          <p>Recovery journaling, regulation logs, and gratitude prompts.</p>
+        </article>
+        <article>
+          <h3>Kids & Family</h3>
+          <p>Allowance games, color-in charts, and chore-based savings fun.</p>
+        </article>
+        <article>
+          <h3>Theme Collections</h3>
+          <p>Butterfly, Sunset Citrus, Mocha Neutral, Midnight Minimal, Bold Pops.</p>
+        </article>
+      </section>
+
+      <section id="scratch-demo" class="scratch-demo" aria-labelledby="scratch-title">
+        <div>
+          <h2 id="scratch-title">Interactive scratch demo</h2>
+          <p>
+            The foil overlay fades gently, sparkles celebrate the reveal, and all controls work with
+            keyboard, screen readers, and reduced-motion users.
+          </p>
+          <div class="scratch-controls">
+            <button class="btn" data-scratch-trigger aria-pressed="false">Scratch to reveal</button>
+            <button class="btn secondary" data-reset-trigger>Reset foil</button>
+            <output aria-live="polite" data-scratch-total>Total saved: $0</output>
+          </div>
+        </div>
+        <div class="scratch-area" data-scratch-area role="img" aria-live="polite" aria-label="Savings circle">
+          <div class="scratch-foil" data-foil>
+            <span aria-hidden="true">Scratch me</span>
+          </div>
+          <div class="scratch-value" data-scratch-value>$50</div>
+          <div class="sparkles" aria-hidden="true" data-sparkles>
+            <span>✦</span>
+            <span>✧</span>
+            <span>✦</span>
+          </div>
+        </div>
+      </section>
+
+      <section id="trackers" class="carousel" aria-labelledby="tracker-title">
+        <div class="carousel-head">
+          <div>
+            <h2 id="tracker-title">Featured dopamine trackers</h2>
+            <p>Horizontal scroll cards show palette dots, savings goal, and reset space.</p>
+          </div>
+          <div class="carousel-actions" role="group" aria-label="Carousel controls">
+            <button class="ghost-btn" data-carousel-prev aria-label="View previous tracker">←</button>
+            <button class="ghost-btn" data-carousel-next aria-label="View next tracker">→</button>
+          </div>
+        </div>
+        <div class="carousel-track" data-carousel>
+          <article class="tracker-card">
+            <header>
+              <h3>$50 Butterfly Boost</h3>
+              <ul class="palette-dots">
+                <li class="dot lavender"></li>
+                <li class="dot teal"></li>
+                <li class="dot rose"></li>
+              </ul>
+            </header>
+            <p>Gentle wins for weekly dopamine hits.</p>
+          </article>
+          <article class="tracker-card">
+            <header>
+              <h3>$250 Emergency Nest</h3>
+              <ul class="palette-dots">
+                <li class="dot lavender"></li>
+                <li class="dot midnight"></li>
+                <li class="dot teal"></li>
+              </ul>
+            </header>
+            <p>Bi-weekly deposits keep you steady.</p>
+          </article>
+          <article class="tracker-card">
+            <header>
+              <h3>Vacation Flow</h3>
+              <ul class="palette-dots">
+                <li class="dot citrus"></li>
+                <li class="dot rose"></li>
+                <li class="dot teal"></li>
+              </ul>
+            </header>
+            <p>Sunset Citrus palette for dreamy travel plans.</p>
+          </article>
+          <article class="tracker-card">
+            <header>
+              <h3>Debt Snowfall</h3>
+              <ul class="palette-dots">
+                <li class="dot midnight"></li>
+                <li class="dot lavender"></li>
+                <li class="dot neutral"></li>
+              </ul>
+            </header>
+            <p>Snowball + avalanche hybrid tracker with notes.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="palette-guide" aria-labelledby="palette-title">
+        <div>
+          <h2 id="palette-title">Soft palettes with high contrast</h2>
+          <p>
+            Lavender + Teal lead the system with flexible accent families. Every card lists palette dots so
+            customers can match their planners, whether printable, tablet-ready, or physical scratch cards.
+          </p>
+        </div>
+        <dl>
+          <div>
+            <dt>Lavender Mist</dt>
+            <dd>#D7C7FF · Calm hero backgrounds</dd>
+          </div>
+          <div>
+            <dt>Teal Glow</dt>
+            <dd>#66D8CC · CTAs + badge tokens</dd>
+          </div>
+          <div>
+            <dt>Rose Quartz</dt>
+            <dd>#F3A9C9 · Highlights + testimonials</dd>
+          </div>
+          <div>
+            <dt>Midnight Anchor</dt>
+            <dd>#2F2A3F · Contrast text + outlines</dd>
+          </div>
+        </dl>
+      </section>
+
+      <section class="testimonials" aria-labelledby="testimonial-title">
+        <div class="section-head">
+          <h2 id="testimonial-title">Gentle wins from the community</h2>
+          <p>Auto-scroll friendly row with pause on hover and full keyboard support.</p>
+        </div>
+        <div class="testimonial-row" data-testimonial-row>
+          <article>
+            <p>“The scratch demo is the only budgeting tool that doesn't stress me out.”</p>
+            <p class="author">— Lena, ADHD mama</p>
+          </article>
+          <article>
+            <p>“Palette dots make it so easy to match my GoodNotes pages.”</p>
+            <p class="author">— Priya, planner lover</p>
+          </article>
+          <article>
+            <p>“Rose designed a sobriety savings plan that celebrated every milestone.”</p>
+            <p class="author">— Cam, recovery coach</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="about" class="about" aria-labelledby="about-title">
+        <div>
+          <h2 id="about-title">Meet Rose — maker, illustrator, joy-bringer</h2>
+          <p>
+            Rose partners with CDT Designs to ensure every layout stays low-pressure, color-consistent, and
+            ready for WooCommerce integration. Together they build playful illustrations, hero cards, and
+            screen-reader labeled interactions.
+          </p>
+          <ul class="badge-list">
+            <li>WCAG 2.1 AA compliant</li>
+            <li>Keyboard-first QA</li>
+            <li>Scratch animation guardrails</li>
+          </ul>
+        </div>
+        <div class="about-card" role="img" aria-label="Illustrated portrait placeholder">
+          <p>Illustrated Rose</p>
+          <p>Founder · S&S Kreates Co.</p>
+        </div>
+      </section>
+
+      <section id="newsletter" class="newsletter" aria-labelledby="newsletter-title">
+        <div>
+          <h2 id="newsletter-title">Get palette drops + tracker freebies</h2>
+          <p>Monthly note with dopamine hacks, accessible layouts, and cozy soundtrack links.</p>
+        </div>
+        <form class="newsletter-form" aria-label="Newsletter signup">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" required placeholder="you@email.com" />
+          <button class="btn" type="submit">Join the newsletter</button>
+          <p class="form-note">We send one intentional email per month. Unsubscribe any time.</p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer" role="contentinfo">
+      <p>© <span id="year"></span> S&S Kreates Co. · Savings that spark joy</p>
+      <p>Designed by Rose + CDT Designs · Built for WordPress / WooCommerce.</p>
+    </footer>
+  </body>
+</html>

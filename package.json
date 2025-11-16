@@ -1,0 +1,22 @@
+{
+  "name": "sskreates",
+  "version": "1.0.0",
+  "description": "Accessible marketing site for S&S Kreates Co.",
+  "main": "index.js",
+  "scripts": {
+    "dev": "http-server -p 4173 -c-1 .",
+    "test": "jest --runInBand"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@testing-library/dom": "^10.4.1",
+    "@testing-library/jest-dom": "^6.9.1",
+    "http-server": "^14.1.1",
+    "jest": "^30.2.0",
+    "jest-environment-jsdom": "^30.2.0",
+    "jsdom": "^27.2.0"
+  }
+}
