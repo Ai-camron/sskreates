@@ -246,6 +246,18 @@ All designs, illustrations, and tools are protected IP of S&S Kreates Co. (2025)
 
 This repo is a clean slate. Add application code, assets, tooling, and documentation as the build progresses. Recreate configuration files (package managers, linters, formatters, etc.) to match your chosen stack. Tests should accompany all future components to ensure WCAG compliance and stable UI/UX behavior.
 
+## 16. Branch Ruleset
+
+Branch protection is codified in `.github/rulesets/default_branch_ruleset.json` so collaborators have a predictable workflow:
+
+- **Scope:** applies to the default branch and any `release/*` branches (draft prefixes are excluded).
+- **History:** linear commits only; force pushes and non-fast-forward merges are blocked.
+- **Reviews:** every pull request requires at least one approving review and stale reviews are dismissed automatically after new pushes so code always gets a fresh look.
+- **Status checks:** `tests/readme_structure` (and any future checks you add to the list) must succeed before merging.
+- **Branch names:** enforced via regex so contributions stick to `main`, semantic `release/vX.Y`, or `feature/{slug}` conventions.
+
+Update the ruleset if you need additional conditions (for example, more required checks) to keep the workflow aligned with your CI/CD stack.
+
 ## License
 
 See [LICENSE](LICENSE).
