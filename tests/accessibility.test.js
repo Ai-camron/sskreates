@@ -54,10 +54,10 @@ describe('S&S Kreates marketing site', () => {
   });
 
   test('brand palette tokens exist in styles', () => {
-    expect(styles).toContain('#d7c7ff');
-    expect(styles).toContain('#66d8cc');
-    expect(styles).toContain('#f3a9c9');
-    expect(styles).toContain('#2f2a3f');
+    expect(styles).toMatch(/#d7c7ff/i);
+    expect(styles).toMatch(/#66d8cc/i);
+    expect(styles).toMatch(/#f3a9c9/i);
+    expect(styles).toMatch(/#2f2a3f/i);
   });
 
   test('currency formatter outputs US currency', () => {
