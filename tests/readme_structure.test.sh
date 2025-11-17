@@ -9,7 +9,8 @@ for section in \
   "Component Library" \
   "Interaction Rules" \
   "Design Philosophy" \
-  "Integration Notes"; do
+  "Integration Notes" \
+  "Branch Ruleset"; do
   if ! grep -q "$section" README.md; then
     echo "Missing section: $section"
     missing=1
