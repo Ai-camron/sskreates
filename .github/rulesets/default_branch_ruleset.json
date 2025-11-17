@@ -1,0 +1,54 @@
+{
+  "name": "Default Branch Ruleset",
+  "target": "branch",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "include": [
+        "~DEFAULT_BRANCH",
+        "release/**"
+      ],
+      "exclude": [
+        "draft/**"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "required_linear_history"
+    },
+    {
+      "type": "non_fast_forward"
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "required_approving_review_count": 1,
+        "require_code_owner_review": false,
+        "dismiss_stale_reviews_on_push": true,
+        "require_last_push_approval": true
+      }
+    },
+    {
+      "type": "required_status_checks",
+      "parameters": {
+        "required_status_checks": [
+          {
+            "context": "tests/readme_structure",
+            "integration_id": null
+          }
+        ],
+        "strict_required_status_checks_policy": true
+      }
+    },
+    {
+      "type": "branch_name_pattern",
+      "parameters": {
+        "operator": "regex",
+        "pattern": "^(main|release\/v[0-9]+\.[0-9]+|feature\/[a-z0-9\-]+)$",
+        "name": "Standard branch naming",
+        "description": "Enforce semantic release, main, or feature/{slug} branches"
+      }
+    }
+  ]
+}
