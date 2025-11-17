@@ -18,6 +18,20 @@ class TestSecurityPolicy(unittest.TestCase):
         self.assertIn("## Supported Versions", content)
         self.assertIn("| Version | Supported", content)
         for row in [
+class SecurityPolicyTests(unittest.TestCase):
+    def setUp(self):
+        self.contents = SECURITY_FILE.read_text(encoding="utf-8") if SECURITY_FILE.exists() else ""
+
+    def test_security_policy_file_exists(self):
+        self.assertTrue(
+            SECURITY_FILE.exists(),
+            "SECURITY.md should exist to describe the project's security posture.",
+        )
+
+    def test_supported_versions_table_present(self):
+        self.assertIn("## Supported Versions", self.contents)
+        self.assertIn("| Version | Supported", self.contents)
+        expected_rows = [
             "| 5.1.x   | :white_check_mark: |",
             "| 5.0.x   | :x:                |",
             "| 4.0.x   | :white_check_mark: |",
@@ -33,6 +47,14 @@ class TestSecurityPolicy(unittest.TestCase):
             "Tell them where to go, how often they can expect to get an update",
             content,
         )
+        ]
+        for row in expected_rows:
+            with self.subTest(row=row):
+                self.assertIn(row, self.contents)
+
+    def test_reporting_section_present(self):
+        self.assertIn("## Reporting a Vulnerability", self.contents)
+        self.assertIn("Use this section to tell people how to report a vulnerability.", self.contents)
 
 
 if __name__ == "__main__":
