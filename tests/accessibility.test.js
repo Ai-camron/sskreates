@@ -3,6 +3,7 @@ const path = require('path');
 const {
   initScratchDemo,
   initMotionToggle,
+  initProgressMeters,
   formatCurrency,
 } = require('../script.js');
 
@@ -51,6 +52,34 @@ describe('S&S Kreates marketing site', () => {
     const before = document.body.dataset.reducedMotion;
     motion.toggle();
     expect(document.body.dataset.reducedMotion).not.toBe(before);
+  });
+
+  test('character spotlight includes descriptive imagery', () => {
+    const img = document.querySelector('[data-character-img]');
+    expect(img).toBeInTheDocument();
+    expect(img.getAttribute('alt')).toMatch(/planner|character|desk/i);
+  });
+
+  test('progress meters animate and remain accessible', () => {
+    const progress = initProgressMeters(container);
+    expect(progress).not.toBeNull();
+    const meters = document.querySelectorAll('[data-progress-meter]');
+    expect(meters.length).toBeGreaterThanOrEqual(3);
+    meters.forEach((meter) => {
+      expect(meter.getAttribute('role')).toBe('meter');
+      const value = Number(meter.getAttribute('aria-valuenow'));
+      expect(value).toBeGreaterThan(0);
+      const fill = meter.querySelector('.progress-fill');
+      expect(parseFloat(fill.style.width)).toBeGreaterThan(0);
+    });
+  });
+
+  test('gallery figures provide captions for imagery', () => {
+    const figures = document.querySelectorAll('[data-gallery-figure]');
+    expect(figures.length).toBeGreaterThanOrEqual(3);
+    figures.forEach((figure) => {
+      expect(figure.querySelector('figcaption')).not.toBeNull();
+    });
   });
 
   test('brand palette tokens exist in styles', () => {
