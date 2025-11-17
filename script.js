@@ -88,7 +88,7 @@ function initMotionToggle(root = document) {
 
   const applyState = (isReduced) => {
     root.body.dataset.reducedMotion = String(isReduced);
-    stateLabel.textContent = isReduced ? 'off' : 'on';
+    stateLabel.textContent = isReduced ? 'on' : 'off';
   };
 
   const media = window.matchMedia('(prefers-reduced-motion: reduce)');
