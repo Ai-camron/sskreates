@@ -150,6 +150,55 @@ function initTestimonialsAutoScroll(root = document) {
   return { start, stop };
 }
 
+function initProgressMeters(root = document) {
+  const meters = Array.from(root.querySelectorAll('[data-progress-meter]'));
+  if (!meters.length) {
+    return null;
+  }
+
+  const fillMeter = (meter) => {
+    if (!meter || meter.dataset.progressReady === 'true') return;
+    const target = Number(meter.dataset.progressMeter);
+    const fill = meter.querySelector('.progress-fill');
+    if (!Number.isFinite(target) || !fill) return;
+    meter.setAttribute('aria-valuenow', String(target));
+    fill.style.width = `${target}%`;
+    meter.dataset.progressReady = 'true';
+  };
+
+  let observer = null;
+  const activate = (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        fillMeter(entry.target);
+        if (observer) {
+          observer.unobserve(entry.target);
+        }
+      }
+    });
+  };
+
+  if (typeof IntersectionObserver === 'function') {
+    observer = new IntersectionObserver(activate, { threshold: 0.3 });
+    meters.forEach((meter) => observer.observe(meter));
+  } else {
+    meters.forEach((meter) => fillMeter(meter));
+  }
+
+  return {
+    refresh: () => {
+      meters.forEach((meter) => {
+        meter.dataset.progressReady = 'false';
+        const fill = meter.querySelector('.progress-fill');
+        if (fill) {
+          fill.style.width = '0%';
+        }
+        fillMeter(meter);
+      });
+    },
+  };
+}
+
 function setCurrentYear(root = document) {
   const yearEl = root.querySelector('#year');
   if (yearEl) {
@@ -162,6 +211,7 @@ function initApp(root = document) {
   initCarousel(root);
   initMotionToggle(root);
   initTestimonialsAutoScroll(root);
+  initProgressMeters(root);
   setCurrentYear(root);
 }
 
@@ -175,6 +225,7 @@ if (typeof module !== 'undefined') {
     initCarousel,
     initMotionToggle,
     initTestimonialsAutoScroll,
+    initProgressMeters,
     setCurrentYear,
     initApp,
     formatCurrency,

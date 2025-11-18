@@ -72,6 +72,75 @@
         </div>
       </section>
 
+      <section class="motion-showcase" id="character" aria-labelledby="motion-title">
+        <div class="motion-copy">
+          <p class="eyebrow">Movement + mascot energy</p>
+          <h2 id="motion-title">Sparky keeps every savings flow playful</h2>
+          <p>
+            Our illustrated companion guides you through micro-movements so the page never feels flat.
+            Motion cues stay WCAG-friendly and respond to the reduced-motion toggle in the header.
+          </p>
+          <ul class="motion-steps" aria-label="Savings journey steps">
+            <li>
+              <span class="step-number">01</span>
+              <div>
+                <h3>Map dopamine-ready goals</h3>
+                <p>Palette tokens label each milestone so you can hop between emergency and travel funds.</p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">02</span>
+              <div>
+                <h3>Scratch, reveal, celebrate</h3>
+                <p>
+                  Sparky releases confetti sparks when you scratch circles or check-in from mobile, tablet, or desktop.
+                </p>
+              </div>
+            </li>
+            <li>
+              <span class="step-number">03</span>
+              <div>
+                <h3>Reset with mindful pauses</h3>
+                <p>Timers, audio cues, and notes keep the experience gentle for neurodivergent planners.</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="character-stack">
+          <figure class="character-card" aria-labelledby="sparky-title sparky-caption">
+            <img
+              data-character-img
+              src="https://images.unsplash.com/photo-1487412720507-e7ab37603c6f?auto=format&fit=crop&w=640&q=80"
+              alt="Playful desk scene with colorful planner stickers and a smiling illustrated character"
+              loading="lazy"
+            />
+            <figcaption id="sparky-caption">
+              <p class="eyebrow" id="sparky-title">Meet Sparky</p>
+              <p>Guides your focus with gentle cues, character badges, and celebratory animations.</p>
+            </figcaption>
+          </figure>
+          <dl class="character-stats" aria-label="Sparky feature stats">
+            <div>
+              <dt>22</dt>
+              <dd>micro-motions with auto pause</dd>
+            </div>
+            <div>
+              <dt>8 palettes</dt>
+              <dd>coordinated outfits + trackers</dd>
+            </div>
+            <div>
+              <dt>4 guides</dt>
+              <dd>focus, savings, reset, rest</dd>
+            </div>
+          </dl>
+          <div class="character-bubbles" aria-hidden="true">
+            <span>✨</span>
+            <span>💌</span>
+            <span>🪙</span>
+          </div>
+        </div>
+      </section>
+
       <section id="shop" aria-labelledby="shop-title" class="shop-overview">
         <div>
           <h2 id="shop-title">All the ways to save</h2>
@@ -115,6 +184,30 @@
         </article>
       </section>
 
+      <section id="toolkit" class="diagram-lab" aria-labelledby="toolkit-title">
+        <div>
+          <p class="eyebrow">Diagrammed workflow</p>
+          <h2 id="toolkit-title">Toolkits snap long sections into playful loops</h2>
+          <p>
+            We stagger systems so you can tackle a tracker, flip to a scratch card, and end with a mindful
+            care ritual. Each loop keeps instructions short, animated, and easy to reset.
+          </p>
+          <ul class="diagram-list">
+            <li>Trackers ship with quick-start diagrams and tactile-friendly color keys.</li>
+            <li>Scratch tools highlight dopamine bursts with reduced-motion options.</li>
+            <li>Care rituals nudge you to pause and log sensations before moving on.</li>
+          </ul>
+        </div>
+        <div class="diagram-board" role="img" aria-label="Flow linking scratch cards, trackers, and mindful care">
+          <div class="diagram-node">Scratch spark</div>
+          <div class="diagram-node">Tracker ring</div>
+          <div class="diagram-node">Care reset</div>
+          <div class="diagram-path diagram-path-1" aria-hidden="true"></div>
+          <div class="diagram-path diagram-path-2" aria-hidden="true"></div>
+          <div class="diagram-path diagram-path-3" aria-hidden="true"></div>
+        </div>
+      </section>
+
       <section id="scratch-demo" class="scratch-demo" aria-labelledby="scratch-title">
         <div>
           <h2 id="scratch-title">Interactive scratch demo</h2>
@@ -138,6 +231,73 @@
             <span>✧</span>
             <span>✦</span>
           </div>
+        </div>
+      </section>
+
+      <section id="challenges" class="challenge-progress" aria-labelledby="challenge-title">
+        <div>
+          <p class="eyebrow">Savings wall</p>
+          <h2 id="challenge-title">Trackers, tools, and challenges stay staggered</h2>
+          <p>
+            Progress meters animate in gentle arcs so you can celebrate a finished scratch circle, then slide right
+            into a tracker update or savings challenge photo.
+          </p>
+        </div>
+        <div class="progress-grid" aria-label="Progress of featured savings challenges">
+          <article class="progress-card">
+            <header>
+              <h3>$600 Flutter Fund</h3>
+              <p>Scratch challenge · 6 circles left</p>
+            </header>
+            <div
+              class="progress-meter"
+              data-progress-meter="42"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="42"
+              aria-label="Flutter Fund at forty two percent"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">Each reveal drops a butterfly token you can stick onto planners or wall calendars.</p>
+          </article>
+          <article class="progress-card">
+            <header>
+              <h3>$1,000 Cozy Reset</h3>
+              <p>Printable tracker · 3 spreads left</p>
+            </header>
+            <div
+              class="progress-meter"
+              data-progress-meter="68"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="68"
+              aria-label="Cozy Reset at sixty eight percent"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">Alternating lavender + teal steps let you move diagonally across the page for variety.</p>
+          </article>
+          <article class="progress-card">
+            <header>
+              <h3>$3,000 Adventure Pot</h3>
+              <p>Hybrid tracker · final sprint</p>
+            </header>
+            <div
+              class="progress-meter"
+              data-progress-meter="85"
+              role="meter"
+              aria-valuemin="0"
+              aria-valuemax="100"
+              aria-valuenow="85"
+              aria-label="Adventure Pot at eighty five percent"
+            >
+              <div class="progress-fill"></div>
+            </div>
+            <p class="progress-note">Use the matching scratch strip to uncover bonus prompts for travel planning.</p>
+          </article>
         </div>
       </section>
 
@@ -226,6 +386,40 @@
             <dd>#2F2A3F · Contrast text + outlines</dd>
           </div>
         </dl>
+      </section>
+
+      <section class="photo-gallery" aria-labelledby="gallery-title">
+        <div>
+          <p class="eyebrow">Gallery</p>
+          <h2 id="gallery-title">Pictures that fill the quiet moments</h2>
+          <p>Real desk scenes, mockups, and tracker close-ups keep the layout lively without losing focus.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure data-gallery-figure>
+            <img
+              src="https://images.unsplash.com/photo-1489515217757-5fd1be406fef?auto=format&fit=crop&w=600&q=80"
+              alt="Savings challenge cards stacked next to colorful pens"
+              loading="lazy"
+            />
+            <figcaption>Scratch-off decks printed on matte foil stock.</figcaption>
+          </figure>
+          <figure data-gallery-figure>
+            <img
+              src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&w=600&q=80"
+              alt="Hands coloring a circular tracker on a digital tablet"
+              loading="lazy"
+            />
+            <figcaption>Tablet-ready trackers stay responsive with large tap zones.</figcaption>
+          </figure>
+          <figure data-gallery-figure>
+            <img
+              src="https://images.unsplash.com/photo-1517840901100-8179e982acb7?auto=format&fit=crop&w=600&q=80"
+              alt="Planner flat lay with savings stickers and soft fabrics"
+              loading="lazy"
+            />
+            <figcaption>Minimal photography fills space without stealing attention.</figcaption>
+          </figure>
+        </div>
       </section>
 
       <section class="testimonials" aria-labelledby="testimonial-title">
