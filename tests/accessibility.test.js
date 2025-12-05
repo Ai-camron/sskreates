@@ -82,6 +82,14 @@ describe('S&S Kreates marketing site', () => {
     });
   });
 
+  test('includes WooCommerce and form plugin shortcodes', () => {
+    expect(html).toMatch(/\[product_categories[^\]]*\]/i);
+    expect(html).toMatch(/\[products[^\]]*visibility="featured"[^\]]*\]/i);
+    expect(html).toMatch(/\[woocommerce_cart\]/i);
+    expect(html).toMatch(/\[mailpoet_form[^\]]*\]/i);
+    expect(html).toMatch(/\[wpforms[^\]]*\]/i);
+  });
+
   test('brand palette tokens exist in styles', () => {
     expect(styles).toMatch(/#d7c7ff/i);
     expect(styles).toMatch(/#66d8cc/i);
