@@ -22,11 +22,11 @@
     <header class="site-header" role="banner">
       <div class="logo-group" aria-label="S and S Kreates Company logo">
         <span class="logo">S&S</span>
-        <span class="logo-subtitle">Savings that spark joy</span>
+        <span class="logo-subtitle">Save · Sparkle · Succeed</span>
       </div>
       <nav aria-label="Primary">
         <ul>
-          <li><a href="#categories">Categories</a></li>
+          <li><a href="#categories">Shop</a></li>
           <li><a href="#scratch-demo">Scratch demo</a></li>
           <li><a href="#trackers">Trackers</a></li>
           <li><a href="#about">About</a></li>
@@ -44,8 +44,9 @@
           <p class="eyebrow">ADHD-friendly budgeting studio</p>
           <h1 id="hero-title">Savings that feel gentle, joyful, and doable</h1>
           <p>
-            Custom scratch-offs, printable trackers, and coordinated palettes help you stay motivated
-            without the overwhelm. Everything is WCAG compliant, neurodivergent-aware, and dopamine-rich.
+            Custom scratch-offs, printable trackers, and coordinated palettes help you stay motivated without the
+            overwhelm. Everything is WCAG compliant, neurodivergent-aware, and dopamine-rich so you can save, sparkle,
+            and succeed.
           </p>
           <div class="hero-actions">
             <a class="btn" href="#shop">Explore the shop</a>
@@ -69,6 +70,39 @@
             <p>Reset-friendly layouts</p>
             <p>Notes + dopamine boosts</p>
           </div>
+        </div>
+      </section>
+
+      <section class="promo-band" aria-label="Fast facts and perks">
+        <div class="promo-items">
+          <article class="promo-item">
+            <div class="promo-icon">🚚</div>
+            <div>
+              <p class="eyebrow">Free shipping</p>
+              <p>Orders $40+ in the US ship free and stay trackable.</p>
+            </div>
+          </article>
+          <article class="promo-item">
+            <div class="promo-icon">⚡</div>
+            <div>
+              <p class="eyebrow">Instant downloads</p>
+              <p>Digital tools arrive immediately with print + tablet files.</p>
+            </div>
+          </article>
+          <article class="promo-item">
+            <div class="promo-icon">🌍</div>
+            <div>
+              <p class="eyebrow">Worldwide</p>
+              <p>International shipping and global-friendly currency cues.</p>
+            </div>
+          </article>
+          <article class="promo-item">
+            <div class="promo-icon">🎨</div>
+            <div>
+              <p class="eyebrow">Palette-matched</p>
+              <p>Soft gradients + bold contrast keep everything legible.</p>
+            </div>
+          </article>
         </div>
       </section>
 
@@ -157,31 +191,75 @@
         </ul>
       </section>
 
-      <section id="categories" class="category-grid" aria-label="Primary savings tool categories">
-        <article>
-          <h3>Scratch-Off Challenges</h3>
-          <p>Digital + mailed foil cards with fixed 220px circles and dopamine sparkles.</p>
-        </article>
-        <article>
-          <h3>Savings Trackers</h3>
-          <p>Printable and tablet layouts for weekly, monthly, and big-goal planning.</p>
-        </article>
-        <article>
-          <h3>Bundles & Kits</h3>
-          <p>Palette-matched combos that pair trackers, journals, and scratch-offs.</p>
-        </article>
-        <article>
-          <h3>Mindful Money Care</h3>
-          <p>Recovery journaling, regulation logs, and gratitude prompts.</p>
-        </article>
-        <article>
-          <h3>Kids & Family</h3>
-          <p>Allowance games, color-in charts, and chore-based savings fun.</p>
-        </article>
-        <article>
-          <h3>Theme Collections</h3>
-          <p>Butterfly, Sunset Citrus, Mocha Neutral, Midnight Minimal, Bold Pops.</p>
-        </article>
+      <section id="categories" class="shop-grid" aria-label="Shop overview with categories and quick links">
+        <div class="shop-intro">
+          <p class="eyebrow">Shop by need</p>
+          <h2>Scratch cards, trackers, and planner-friendly kits</h2>
+          <p>
+            Build a full savings ritual: pair dopamine scratch cards with printable trackers, guided journals, and
+            sticker packs. Everything is organized by goal so you can jump straight to what you need.
+          </p>
+          <ul class="pill-list" aria-label="Shop filters">
+            <li>Digital + physical formats</li>
+            <li>Palette families: Lavender, Teal, Rose</li>
+            <li>Goals: Emergency, Travel, Debt-free</li>
+            <li>Difficulty: Gentle · Medium · Bold</li>
+          </ul>
+        </div>
+        <div class="category-grid" aria-label="Primary savings tool categories">
+          <article class="shortcode-block" aria-label="WooCommerce category shortcode">
+            <p class="eyebrow">Auto-synced from WordPress</p>
+            <h3>Primary savings tool categories</h3>
+            <p class="shortcode-note">
+              Replace this block with live WooCommerce categories so the grid always mirrors your store taxonomy and
+              imagery.
+            </p>
+            <code>[product_categories number="6" columns="3" hide_empty="0" parent="0"]</code>
+            <p class="shortcode-note">
+              Tip: adjust the <code>parent</code> attribute to target a top-level grouping such as <em>Trackers</em> or
+              <em>Scratch-Offs</em>.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section id="woocommerce-feed" class="woocommerce-feed" aria-labelledby="woocommerce-title">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">WooCommerce shortcodes</p>
+            <h2 id="woocommerce-title">Keep featured, best-sellers, and sales in sync</h2>
+            <p>
+              Drop in the shortcodes below to render live products without editing HTML. The added CSS class hooks make
+              the WordPress output inherit this page’s typography and grid spacing automatically.
+            </p>
+          </div>
+          <div class="feed-actions" role="group" aria-label="Storefront quick links">
+            <a class="btn" href="#scratch-demo">Preview interactions</a>
+            <a class="btn secondary" href="#newsletter">Join newsletter</a>
+          </div>
+        </div>
+        <div class="shortcode-grid" aria-label="WooCommerce product listing shortcodes">
+          <article class="shortcode-block" aria-label="Featured product shortcode">
+            <h3>Featured products</h3>
+            <code>[products limit="6" columns="3" visibility="featured" orderby="menu_order" class="dopamine-grid"]</code>
+            <p class="shortcode-note">
+              Add the <code>class</code> attribute to inherit existing grid styling. WooCommerce handles pagination,
+              price display, and badges automatically.
+            </p>
+          </article>
+          <article class="shortcode-block" aria-label="Best selling products shortcode">
+            <h3>Best sellers</h3>
+            <code>[best_selling_products limit="4" columns="4" class="dopamine-grid"]</code>
+            <p class="shortcode-note">Use this row to rotate seasonal favorites without updating HTML.</p>
+          </article>
+          <article class="shortcode-block" aria-label="On sale products shortcode">
+            <h3>On-sale picks</h3>
+            <code>[sale_products limit="4" columns="4" orderby="date" class="dopamine-grid"]</code>
+            <p class="shortcode-note">
+              Drop this shortcode where promos belong; WordPress will only show products with active sale prices.
+            </p>
+          </article>
+        </div>
       </section>
 
       <section id="toolkit" class="diagram-lab" aria-labelledby="toolkit-title">
@@ -468,12 +546,14 @@
           <h2 id="newsletter-title">Get palette drops + tracker freebies</h2>
           <p>Monthly note with dopamine hacks, accessible layouts, and cozy soundtrack links.</p>
         </div>
-        <form class="newsletter-form" aria-label="Newsletter signup">
-          <label for="email">Email address</label>
-          <input id="email" name="email" type="email" required placeholder="you@email.com" />
-          <button class="btn" type="submit">Join the newsletter</button>
-          <p class="form-note">We send one intentional email per month. Unsubscribe any time.</p>
-        </form>
+        <article class="shortcode-block" aria-label="Newsletter plugin shortcode">
+          <h3>Drop in your WordPress form</h3>
+          <code>[contact-form-7 id="123" title="Newsletter Signup"]</code>
+          <p class="shortcode-note">
+            Swap the shortcode to match your preferred form plugin (e.g., MailPoet, Fluent Forms). The surrounding styles
+            keep spacing, while the plugin handles validation, consent checkboxes, and double opt-in.
+          </p>
+        </article>
       </section>
     </main>
 

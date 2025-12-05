@@ -199,6 +199,82 @@ p {
   font-weight: 700;
 }
 
+.promo-band {
+  background: rgba(247, 245, 255, 0.8);
+  border: 1px solid rgba(47, 42, 63, 0.08);
+  border-radius: var(--radius-large);
+  padding: 1.5rem clamp(1.5rem, 4vw, 3rem);
+  box-shadow: var(--shadow);
+}
+
+.promo-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.promo-item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.8rem 1rem;
+  align-items: start;
+  padding: 1rem;
+  border-radius: 18px;
+  background: white;
+  border: 1px solid rgba(47, 42, 63, 0.06);
+}
+
+.promo-icon {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  place-items: center;
+  border-radius: 14px;
+  background: linear-gradient(135deg, var(--lavender), var(--teal));
+  font-size: 1.2rem;
+}
+
+.shop-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  align-items: start;
+}
+
+.shop-intro {
+  padding: 2rem;
+  border-radius: var(--radius-large);
+  background: white;
+  border: 1px solid rgba(47, 42, 63, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.woocommerce-feed {
+  display: grid;
+  gap: 1.5rem;
+  background: white;
+  border-radius: var(--radius-large);
+  padding: 2rem clamp(1.5rem, 4vw, 3rem);
+  border: 1px solid rgba(47, 42, 63, 0.08);
+  box-shadow: var(--shadow);
+}
+
+.shortcode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+}
+
+.feed-actions {
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .character-stats dd {
   margin: 0;
   font-size: 0.9rem;
@@ -350,6 +426,31 @@ p {
   padding: 1.5rem;
   box-shadow: var(--shadow);
   min-height: 180px;
+}
+
+.shortcode-block {
+  background: white;
+  border: 1px solid rgba(47, 42, 63, 0.1);
+  border-radius: 24px;
+  padding: 1.5rem;
+  box-shadow: var(--shadow);
+  display: grid;
+  gap: 0.75rem;
+}
+
+.shortcode-block code {
+  display: inline-block;
+  padding: 0.65rem 0.9rem;
+  border-radius: 16px;
+  background: linear-gradient(135deg, rgba(215, 199, 255, 0.3), rgba(102, 216, 204, 0.25));
+  font-family: 'Playfair Display', 'Times New Roman', serif;
+  font-size: 1rem;
+}
+
+.shortcode-note {
+  margin: 0;
+  font-size: 0.95rem;
+  color: rgba(47, 42, 63, 0.8);
 }
 
 .diagram-lab {
