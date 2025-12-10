@@ -37,7 +37,7 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
         <span class="page-decoration" style="bottom: 20px; left: 5%;" aria-hidden="true">🦋</span>
         <div class="hero-card">
           <div class="hero-copy">
-            <h1 id="ssk-hero-heading"><span class="decorative-icon" aria-hidden="true">🌹</span> Gamified savings challenges for pastel-loving planners <span class="decorative-icon" aria-hidden="true">🦋</span></h1>
+            <h1 id="ssk-hero-heading">Gamified savings challenges for pastel-loving planners</h1>
             <p>Pick a savings challenge, track mini wins, and watch your progress bar glow. Designed by Rose of S&S Kreates Co.</p>
             <div class="chip-row" role="list">
               <span class="chip" role="listitem">🌸 Pastel planners</span>
