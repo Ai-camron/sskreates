@@ -13,19 +13,21 @@ get_header();
   <main id="main" class="site-main" role="main">
     <div class="ssk-page">
       <section class="hero" aria-labelledby="ssk-learning-hero">
+        <span class="page-decoration" style="top: -10px; right: 12%;" aria-hidden="true">🦋</span>
+        <span class="page-decoration" style="bottom: 20px; left: 8%;" aria-hidden="true">🌹</span>
         <div class="hero-card">
           <div class="hero-copy">
-            <h1 id="ssk-learning-hero">Pick how you want to learn</h1>
+            <h1 id="ssk-learning-hero">📚 Pick how you want to learn</h1>
             <p>Videos, quick reads, and planner-friendly guides to get you saving with mini wins.</p>
           </div>
           <div class="btn-row" role="group" aria-label="Learning actions">
-            <a class="btn btn-primary" href="#ssk-learning-links">Browse lessons</a>
+            <a class="btn btn-primary" href="#ssk-learning-links">🌸 Browse lessons</a>
             <a class="btn btn-secondary" href="#ssk-featured-video">Watch the feature</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="mini-card">
-            <span class="pill-meta">Fresh drop</span>
+            <span class="pill-meta">✨ Fresh drop</span>
             <h4>Challenges for beginners</h4>
             <p class="section-subtitle" style="margin:0;">A simple roadmap for your first savings game.</p>
           </div>
@@ -33,8 +35,9 @@ get_header();
       </section>
 
       <section class="section" aria-labelledby="ssk-featured-video" id="ssk-featured-video">
+        <span class="page-decoration" style="top: 15px; right: 5%;" aria-hidden="true">🌸</span>
         <div class="section-header">
-          <h2 class="section-title">Featured video</h2>
+          <h2 class="section-title">🎥 Featured video</h2>
           <p class="section-subtitle">Rose walks you through a full challenge setup.</p>
         </div>
         <div class="learning-grid">
@@ -51,15 +54,16 @@ get_header();
       </section>
 
       <section class="section" aria-labelledby="ssk-learning-links" id="ssk-learning-links">
+        <span class="page-decoration" style="top: 10px; left: 7%;" aria-hidden="true">🌹</span>
         <div class="section-header">
-          <h2 class="section-title">Learning resources</h2>
+          <h2 class="section-title">🦋 Learning resources</h2>
           <p class="section-subtitle">Read, watch, and apply the savings glow-up.</p>
         </div>
         <div class="link-pills" role="list">
           <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/beginners-guide/' ) ); ?>">Beginner’s guide to savings games</a>
-          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/first-challenge/' ) ); ?>">How to choose your first challenge</a>
-          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/irregular-income/' ) ); ?>">Budgeting with irregular income</a>
-          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/sinking-funds/' ) ); ?>">Pairing scratch-offs with sinking funds</a>
+          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/first-challenge/' ) ); ?>">✨ How to choose your first challenge</a>
+          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/irregular-income/' ) ); ?>">💰 Budgeting with irregular income</a>
+          <a class="link-pill" role="listitem" href="<?php echo esc_url( home_url( '/learning/sinking-funds/' ) ); ?>">🎯 Pairing scratch-offs with sinking funds</a>
         </div>
       </section>
     </div>
