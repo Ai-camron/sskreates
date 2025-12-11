@@ -22,7 +22,7 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
           <span class="logo-icon" aria-hidden="true">S&S</span>
           <span class="logo-text">S&S Kreates Co</span>
         </a>
-        <div class="top-actions" style="display:flex;align-items:center;gap:0.65rem;">
+        <div class="top-actions">
           <a class="ghost-link" href="<?php echo esc_url( $account_url ); ?>">Sign in</a>
           <a class="icon-pill" href="<?php echo esc_url( $cart_url ); ?>">
             <span aria-hidden="true">🛒</span>
