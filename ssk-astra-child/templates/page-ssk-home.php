@@ -22,7 +22,7 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
           <span class="logo-icon" aria-hidden="true">S&S</span>
           <span class="logo-text">S&S Kreates Co</span>
         </a>
-        <div class="top-actions" style="display:flex;align-items:center;gap:0.65rem;">
+        <div class="top-actions">
           <a class="ghost-link" href="<?php echo esc_url( $account_url ); ?>">Sign in</a>
           <a class="icon-pill" href="<?php echo esc_url( $cart_url ); ?>">
             <span aria-hidden="true">🛒</span>
@@ -283,9 +283,11 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
         <div class="email-strip">
           <h2 class="email-strip-title" id="email-strip">Get new challenges, launches, and savings tips</h2>
           <p class="email-strip-text">Join Rose’s list for pastel goodies and mini challenges.</p>
-          <form class="email-form" action="#" method="post">
+          <form class="email-form" action="<?php echo esc_url( admin_url('admin-post.php') ); ?>" method="post">
             <label class="sr-only" for="ssk-email-input">Email address</label>
             <input class="email-input" id="ssk-email-input" type="email" name="email" placeholder="you@example.com" required />
+            <input type="hidden" name="action" value="ssk_email_signup" />
+            <?php wp_nonce_field( 'ssk_email_signup_action', 'ssk_email_signup_nonce' ); ?>
             <button class="email-btn" type="submit">Sign me up</button>
             <p class="email-footnote">We respect your inbox. Unsubscribe anytime.</p>
           </form>

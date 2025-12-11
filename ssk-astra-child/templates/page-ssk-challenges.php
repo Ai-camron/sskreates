@@ -31,7 +31,7 @@ $shop_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalink( 
           <div class="mini-card">
             <span class="pill-meta">🎯 Challenge vault</span>
             <h4>Dozens of pastel-friendly games</h4>
-            <p class="section-subtitle" style="margin:0;">Swipe through and pick your vibe.</p>
+            <p class="section-subtitle">Swipe through and pick your vibe.</p>
           </div>
         </div>
       </section>
