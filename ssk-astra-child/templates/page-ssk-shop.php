@@ -35,7 +35,7 @@ $account_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalin
           <div class="mini-card">
             <span class="pill-meta">New this month</span>
             <h4>Celestial scratch series</h4>
-            <p class="section-subtitle" style="margin:0;">Limited pastel foil cards to reveal your wins.</p>
+            <p class="section-subtitle">Limited pastel foil cards to reveal your wins.</p>
           </div>
         </div>
       </section>
