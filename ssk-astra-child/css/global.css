@@ -7,10 +7,13 @@
   --ink-soft: #4b5563;
   --paper: #ffffff;
   --muted: #9ca3af;
-  --radius-lg: 1.25rem;
-  --radius-md: 0.875rem;
+  --radius-lg: 1.5rem;
+  --radius-md: 1rem;
   --radius-pill: 999px;
+  --radius-button: 2rem;
   --shadow-soft: 0 14px 30px rgba(15, 23, 42, 0.1);
+  --rose: #ffc0cb;
+  --rose-soft: #ffe4e9;
 }
 
 .ssk-page {
@@ -161,8 +164,8 @@
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  padding: 0.85rem 1rem;
-  border-radius: var(--radius-pill);
+  padding: 1rem 1.75rem;
+  border-radius: var(--radius-button);
   font-weight: 800;
   text-decoration: none;
   border: none;
@@ -179,7 +182,7 @@
 .btn-secondary {
   background: var(--paper);
   color: var(--ink);
-  border: 2px solid var(--purple);
+  border: 3px solid var(--purple);
 }
 
 .btn:hover,
@@ -497,9 +500,9 @@
 }
 
 .btn-ghost {
-  padding: 0.65rem 0.95rem;
-  border-radius: var(--radius-pill);
-  border: 2px solid var(--purple);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-button);
+  border: 3px solid var(--purple);
   background: transparent;
   font-weight: 800;
   color: var(--ink);
@@ -509,8 +512,8 @@
 }
 
 .btn-fill {
-  padding: 0.65rem 0.95rem;
-  border-radius: var(--radius-pill);
+  padding: 0.75rem 1.25rem;
+  border-radius: var(--radius-button);
   background: linear-gradient(135deg, var(--purple) 0%, var(--purple-deep) 100%);
   color: var(--ink);
   font-weight: 800;
@@ -652,8 +655,8 @@
 }
 
 .email-btn {
-  padding: 0.8rem 1rem;
-  border-radius: var(--radius-pill);
+  padding: 1rem 1.75rem;
+  border-radius: var(--radius-button);
   background: linear-gradient(135deg, var(--purple) 0%, var(--purple-deep) 100%);
   border: none;
   font-weight: 800;
@@ -695,6 +698,23 @@
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0;
+}
+
+.hero-card {
+  position: relative;
+  overflow: visible;
+}
+
+.section {
+  position: relative;
+}
+
+.page-decoration {
+  position: absolute;
+  font-size: 4rem;
+  opacity: 0.08;
+  pointer-events: none;
+  user-select: none;
 }
 
 @media (min-width: 720px) {

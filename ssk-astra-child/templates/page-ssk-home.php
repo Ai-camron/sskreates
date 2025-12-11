@@ -33,30 +33,32 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
       </div>
 
       <section class="hero" aria-labelledby="ssk-hero-heading">
+        <span class="page-decoration" style="top: -20px; right: 10%;" aria-hidden="true">🌹</span>
+        <span class="page-decoration" style="bottom: 20px; left: 5%;" aria-hidden="true">🦋</span>
         <div class="hero-card">
           <div class="hero-copy">
             <h1 id="ssk-hero-heading">Gamified savings challenges for pastel-loving planners</h1>
             <p>Pick a savings challenge, track mini wins, and watch your progress bar glow. Designed by Rose of S&S Kreates Co.</p>
             <div class="chip-row" role="list">
-              <span class="chip" role="listitem">Pastel planners</span>
-              <span class="chip" role="listitem">Scratch-offs</span>
-              <span class="chip" role="listitem">Savings wins</span>
+              <span class="chip" role="listitem">🌸 Pastel planners</span>
+              <span class="chip" role="listitem">✨ Scratch-offs</span>
+              <span class="chip" role="listitem">💖 Savings wins</span>
             </div>
           </div>
           <div class="btn-row" role="group" aria-label="Primary actions">
-            <a class="btn btn-primary" href="<?php echo esc_url( $shop_url ); ?>">Shop challenges</a>
+            <a class="btn btn-primary" href="<?php echo esc_url( $shop_url ); ?>">🛍️ Shop challenges</a>
             <a class="btn btn-secondary" href="#pick-your-challenge">See how it works</a>
           </div>
         </div>
         <div class="hero-visual">
           <div class="hero-card-stack" aria-label="Challenge preview cards">
             <div class="mini-card">
-              <span class="pill-meta">Weekly challenge</span>
+              <span class="pill-meta">🌹 Weekly challenge</span>
               <h4>Scratch, save, and celebrate mini wins</h4>
               <p class="section-subtitle" style="margin:0;">Track your progress in-app or on paper.</p>
             </div>
             <div class="mini-card">
-              <span class="pill-meta">Digital + printable</span>
+              <span class="pill-meta">🦋 Digital + printable</span>
               <h4>Just log your mini wins</h4>
               <p class="section-subtitle" style="margin:0;">Use the progress bar to stay motivated.</p>
             </div>
@@ -79,36 +81,37 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
       </section>
 
       <section class="section" aria-labelledby="pick-your-challenge">
+        <span class="page-decoration" style="top: 10px; right: 5%;" aria-hidden="true">🌸</span>
         <div class="section-header">
-          <h2 class="section-title" id="pick-your-challenge">Pick your challenge</h2>
+          <h2 class="section-title" id="pick-your-challenge">🌹 Pick your challenge</h2>
           <p class="section-subtitle">Choose a pastel-friendly savings adventure.</p>
         </div>
         <div class="card-row-scroll" role="list">
           <article class="category-card" role="listitem">
-            <span class="category-tag">Scratch-Off Cards</span>
+            <span class="category-tag">✨ Scratch-Off Cards</span>
             <h3 class="category-name">Peel, reveal, and save</h3>
             <p class="category-desc">Physical scratch cards with pastel foil and motivational rewards.</p>
             <div class="category-meta">
-              <span class="pill-soft">Beginner friendly</span>
-              <span class="pill-soft">Ships in 3 days</span>
+              <span class="pill-soft">🌸 Beginner friendly</span>
+              <span class="pill-soft">📦 Ships in 3 days</span>
             </div>
           </article>
           <article class="category-card" role="listitem">
-            <span class="category-tag">Printable Trackers</span>
+            <span class="category-tag">📄 Printable Trackers</span>
             <h3 class="category-name">Mark progress your way</h3>
             <p class="category-desc">Downloadable trackers for envelopes, binders, and planners.</p>
             <div class="category-meta">
-              <span class="pill-soft">Instant download</span>
-              <span class="pill-soft">Kawaii icons</span>
+              <span class="pill-soft">⚡ Instant download</span>
+              <span class="pill-soft">🦋 Kawaii icons</span>
             </div>
           </article>
           <article class="category-card" role="listitem">
-            <span class="category-tag">Digital Planners</span>
+            <span class="category-tag">📱 Digital Planners</span>
             <h3 class="category-name">Tap to log mini wins</h3>
             <p class="category-desc">GoodNotes-ready planner pages and widgets for progress bars.</p>
             <div class="category-meta">
-              <span class="pill-soft">iPad + Android</span>
-              <span class="pill-soft">Hyperlinked tabs</span>
+              <span class="pill-soft">💫 iPad + Android</span>
+              <span class="pill-soft">🔗 Hyperlinked tabs</span>
             </div>
           </article>
         </div>
@@ -173,8 +176,9 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
       </section>
 
       <section class="section" aria-labelledby="featured-challenges">
+        <span class="page-decoration" style="top: 0; left: 3%;" aria-hidden="true">🦋</span>
         <div class="section-header">
-          <h2 class="section-title" id="featured-challenges">Featured challenges</h2>
+          <h2 class="section-title" id="featured-challenges">🌟 Featured challenges</h2>
           <p class="section-subtitle">Customer favorites for pastel savers.</p>
         </div>
         <div class="product-grid">
@@ -227,8 +231,9 @@ $learn_more_id = esc_attr( 'learn-with-rose' );
       </section>
 
       <section class="section" id="<?php echo $learn_more_id; ?>" aria-labelledby="learn-with-rose">
+        <span class="page-decoration" style="top: 20px; right: 8%;" aria-hidden="true">🌹</span>
         <div class="section-header">
-          <h2 class="section-title" id="learn-with-rose">Learn with Rose</h2>
+          <h2 class="section-title" id="learn-with-rose">🌹 Learn with Rose</h2>
           <p class="section-subtitle">Watch how to set up your first challenge.</p>
         </div>
         <div class="learning-grid">
