@@ -46,10 +46,10 @@ $account_url = function_exists( 'wc_get_page_permalink' ) ? wc_get_page_permalin
           <p class="section-subtitle">Pick a format to explore. (Filters are decorative for now.)</p>
         </div>
         <div class="chip-row" role="list">
-          <button class="link-pill" type="button" role="listitem">Scratch-offs</button>
-          <button class="link-pill" type="button" role="listitem">Printable trackers</button>
-          <button class="link-pill" type="button" role="listitem">Digital planners</button>
-          <button class="link-pill" type="button" role="listitem">Bundles</button>
+          <span class="link-pill" role="listitem">Scratch-offs</span>
+          <span class="link-pill" role="listitem">Printable trackers</span>
+          <span class="link-pill" role="listitem">Digital planners</span>
+          <span class="link-pill" role="listitem">Bundles</span>
         </div>
       </section>
 
