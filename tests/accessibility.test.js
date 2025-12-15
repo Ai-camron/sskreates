@@ -92,4 +92,11 @@ describe('S&S Kreates marketing site', () => {
   test('currency formatter outputs US currency', () => {
     expect(formatCurrency(75)).toBe('$75.00');
   });
+
+  test('WooCommerce shortcodes remain embedded for WordPress rendering', () => {
+    expect(html).toMatch(/\[product_categories[^\]]+\]/i);
+    expect(html).toMatch(/\[products[^\]]+visibility="featured"[^\]]*\]/i);
+    expect(html).toMatch(/\[best_selling_products[^\]]+\]/i);
+    expect(html).toMatch(/\[sale_products[^\]]+\]/i);
+  });
 });
