@@ -750,6 +750,71 @@ p {
   opacity: 0.85;
 }
 
+.shortcode-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.shortcode-compact {
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+.shortcode-card {
+  background: white;
+  border: 1px dashed rgba(47, 42, 63, 0.16);
+  border-radius: 18px;
+  padding: 1rem 1.25rem;
+  box-shadow: 0 10px 30px rgba(47, 42, 63, 0.08);
+  display: grid;
+  gap: 0.5rem;
+}
+
+.shortcode-code {
+  display: inline-block;
+  background: var(--neutral);
+  color: var(--midnight);
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid rgba(47, 42, 63, 0.12);
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.9rem;
+  word-break: break-word;
+}
+
+.shortcode-chip {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding: 0.85rem 1rem;
+  background: rgba(102, 216, 204, 0.1);
+  border-radius: 14px;
+  border: 1px dashed rgba(102, 216, 204, 0.6);
+  margin: 0 0 1rem;
+}
+
+.chip-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  background: rgba(47, 42, 63, 0.08);
+  font-weight: 700;
+  letter-spacing: 0.01em;
+}
+
+.shortcode-inline {
+  font-family: 'SFMono-Regular', Consolas, 'Liberation Mono', Menlo, monospace;
+  font-size: 0.95rem;
+  background: rgba(247, 245, 255, 0.85);
+  padding: 0.35rem 0.65rem;
+  border-radius: 10px;
+  border: 1px solid rgba(47, 42, 63, 0.14);
+}
+
 .site-footer {
   text-align: center;
   padding: 2rem 1rem 3rem;

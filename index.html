@@ -155,9 +155,55 @@
           <li>Goal · emergency / travel / debt</li>
           <li>Difficulty · gentle / medium / bold</li>
         </ul>
+        <div class="shortcode-grid" role="list" aria-label="WordPress shortcodes for matching shop content">
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WooCommerce</p>
+            <h3>Replace category grid</h3>
+            <p>Drop this into a WordPress block or Elementor HTML widget to mirror the grid below.</p>
+            <code class="shortcode-code" aria-label="WooCommerce product categories shortcode">[product_categories number="6" columns="3" parent="0" hide_empty="false"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WooCommerce</p>
+            <h3>Featured products</h3>
+            <p>Surface the dopamine-friendly picks that match the featured tracker section.</p>
+            <code class="shortcode-code" aria-label="Featured products shortcode">[products visibility="featured" limit="6" columns="3" orderby="menu_order"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WooCommerce</p>
+            <h3>Best sellers & bundles</h3>
+            <p>Use for the bundle callouts or seasonal kits without manual duplication.</p>
+            <code class="shortcode-code" aria-label="Best selling products shortcode">[best_selling_products per_page="6" columns="3"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WooCommerce</p>
+            <h3>Goal-specific feeds</h3>
+            <p>Swap categories to pull in emergency, travel, or debt trackers dynamically.</p>
+            <code class="shortcode-code" aria-label="Goal category shortcode">[product_category category="emergency-fund" columns="3" limit="3"]</code>
+            <code class="shortcode-code" aria-label="Travel tracker shortcode">[product_category category="vacation-tracker" columns="3" limit="3"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WooCommerce</p>
+            <h3>Scratch-off spotlight</h3>
+            <p>Mirror the scratch demo CTA with a product slider that ships with foil cards.</p>
+            <code class="shortcode-code" aria-label="Scratch card shortcode">[products tag="scratch-card" columns="4" limit="4"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">Core flows</p>
+            <h3>Cart + account embeds</h3>
+            <p>Keep the cart, checkout, and account experiences aligned with this page.</p>
+            <code class="shortcode-code" aria-label="WooCommerce cart shortcode">[woocommerce_cart]</code>
+            <code class="shortcode-code" aria-label="WooCommerce checkout shortcode">[woocommerce_checkout]</code>
+            <code class="shortcode-code" aria-label="WooCommerce account shortcode">[woocommerce_my_account]</code>
+          </article>
+        </div>
       </section>
 
       <section id="categories" class="category-grid" aria-label="Primary savings tool categories">
+        <div class="shortcode-chip" role="note" aria-label="Shortcode preview for categories section">
+          <span class="chip-label">WordPress ready</span>
+          <code class="shortcode-inline">[product_categories number="6" columns="3" ids="scratch-cards,savings-challenges,budgeting-tools,workbooks,kids-family,theme-collections"]</code>
+          <span aria-hidden="true">↺ Auto-updates with WooCommerce</span>
+        </div>
         <article>
           <h3>Scratch-Off Challenges</h3>
           <p>Digital + mailed foil cards with fixed 220px circles and dopamine sparkles.</p>
@@ -358,6 +404,11 @@
             <p>Snowball + avalanche hybrid tracker with notes.</p>
           </article>
         </div>
+        <div class="shortcode-chip" role="note" aria-label="Shortcode preview for tracker carousel">
+          <span class="chip-label">WooCommerce slider</span>
+          <code class="shortcode-inline">[products tag="tracker" limit="4" columns="4" orderby="menu_order" order="ASC" slider="true"]</code>
+          <span aria-hidden="true">Pairs with carousel controls</span>
+        </div>
       </section>
 
       <section class="palette-guide" aria-labelledby="palette-title">
@@ -474,6 +525,26 @@
           <button class="btn" type="submit">Join the newsletter</button>
           <p class="form-note">We send one intentional email per month. Unsubscribe any time.</p>
         </form>
+        <div class="shortcode-grid shortcode-compact" role="list" aria-label="Newsletter and form plugin shortcodes">
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">MailPoet</p>
+            <h3>Newsletter embed</h3>
+            <p>Swap in the live signup form while keeping this WCAG-friendly wrapper.</p>
+            <code class="shortcode-code" aria-label="MailPoet form shortcode">[mailpoet_form id="1"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">WPForms</p>
+            <h3>Accessible form fallback</h3>
+            <p>Pairs with the inline form above for cases where you need spam protection or analytics.</p>
+            <code class="shortcode-code" aria-label="WPForms shortcode">[wpforms id="newsletter" title="false" description="false"]</code>
+          </article>
+          <article class="shortcode-card" role="listitem">
+            <p class="eyebrow">Contact Form 7</p>
+            <h3>Simple opt-in</h3>
+            <p>Use when migrating legacy CTAs to the new dopamine-friendly layout.</p>
+            <code class="shortcode-code" aria-label="Contact Form 7 shortcode">[contact-form-7 id="1234" title="Newsletter opt-in"]</code>
+          </article>
+        </div>
       </section>
     </main>
 
